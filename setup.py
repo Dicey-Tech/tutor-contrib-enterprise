@@ -38,8 +38,8 @@ setup(
     long_description=load_readme(),
     packages=find_packages(exclude=["tests*"]),
     include_package_data=True,
-    python_requires=">=3.5",
-    install_requires=["tutor"],
+    python_requires=">=3.6",
+    install_requires=["tutor>=12.0.0,<13.0.0"],
     entry_points={
         "tutor.plugin.v0": [
             "enterprise = tutorenterprise.plugin"

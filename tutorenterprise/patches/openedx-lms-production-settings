@@ -1,0 +1,5 @@
+ENTERPRISE_API_URL = "{{ "https" if ENABLE_HTTPS else "http" }}://{{ LMS_HOST }}/enterprise/api/v1/"
+SYSTEM_WIDE_ROLE_CLASSES = SYSTEM_WIDE_ROLE_CLASSES + [
+    'system_wide_roles.SystemWideRoleAssignment',
+    'enterprise.SystemWideEnterpriseUserRoleAssignment',
+]

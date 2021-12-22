@@ -1,0 +1,2 @@
+ENTERPRISE_API_URL = "http://{{ LMS_HOST }}:8000/enterprise/api/v1/"
+ENTERPRISE_CONSENT_API_URL = "http://{{ LMS_HOST }}:8000/consent/api/v1/"

@@ -8,9 +8,16 @@ templates = pkg_resources.resource_filename(
     "tutorenterprise", "templates"
 )
 
-config = {}
+config = {
+    "defaults": {
+        "VERSION": __version__,
+        "USER": "enterprise",
+    }
+}
 
-hooks = {}
+hooks = {
+    "init": ["lms"],
+}
 
 
 def patches():
